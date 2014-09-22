@@ -238,7 +238,7 @@ private void displayStocks(String[] symbols) {
 
       StockPrice[] prices = new StockPrice[stocks.size()];
       for (int i = 0; i < stocks.size(); i++) {
-        double price = (Math.sin(Random.nextDouble()) +1)/2 * MAX_PRICE;
+        double price = (Random.nextDouble() + 1 / 2) * MAX_PRICE;
         double change = price * MAX_PRICE_CHANGE
             * (Random.nextDouble() * 2.0 - 1.0);
 
